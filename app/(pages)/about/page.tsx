@@ -5,7 +5,7 @@ import useAuth from "../../store/useAuth";
 import { Button } from "@/components/ui/button";
 
 const about = () => {
-  const { isLogin, setLogout } = useAuth();
+  const { isLogin } = useAuth();
 
   return (
     <div>
