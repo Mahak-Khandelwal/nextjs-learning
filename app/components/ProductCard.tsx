@@ -15,10 +15,10 @@ interface IProduct {
 interface ProductCardProps {
   product: IProduct;
 }
-const black = "black"
+
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className={`  p-4 w-80  border  flex flex-col items-center lg:items-start`}>
+    <div className={`p-4 w-80  border  flex flex-col items-center lg:items-start`}>
       <div>
         <img
           src={product.image}
