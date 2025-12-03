@@ -1,5 +1,13 @@
-export function TypographyBlockquote({ children }) {
+import React from "react";
+
+export function TypographyBlockquote({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <blockquote className="mt-6 border-l-2 pl-6 italic font-bold">{children}</blockquote>
+    <blockquote className="mt-6 border-l-2 pl-6 italic font-bold">
+      {children}
+    </blockquote>
   );
 }

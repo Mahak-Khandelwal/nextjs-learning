@@ -1,6 +1,6 @@
 import React from "react";
 
-export function TypographyH1({ children }) {
+export function TypographyH1({ children }: { children: React.ReactNode }) {
   return (
     <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-balance">
       {children}

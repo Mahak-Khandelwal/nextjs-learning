@@ -229,17 +229,22 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                       </NavigationMenuItem>
                     ))}
 
-                    {isLogin && (
-                      <div className="flex gap-6">
-                        <Link
-                          href={"/todo"}
-                          className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                        >
-                          Todo
-                        </Link>
-                      </div>
-                    )}
-                    
+                    {/* {isLogin && ( */}
+                    <div className="flex gap-6">
+                      <Link
+                        href={"/todo"}
+                        className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                      >
+                        Todo
+                      </Link>
+                    </div>
+
+                    <Link
+                      href={"/login"}
+                      className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                    >
+                      Login
+                    </Link>
                   </NavigationMenuList>
                 </NavigationMenu>
               )}
